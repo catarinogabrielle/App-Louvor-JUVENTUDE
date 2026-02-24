@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Louvor JUVENTUDE | PIB Mandaguaçu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/image.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <header class="header">
+            <img src="assets/image.png" alt="Logo">
+            <div class="header-title">
+                <h1 id="header-main-title">Próximo Culto</h1>
+                <p id="header-sub-title">PIB Mandaguaçu / JUVENTUDE</p>
+            </div>
+        </header>
+
+        <main class="content-area">
+
+            <div id="tab-home" class="tab-content active">
+                <h2 class="section-title" style="margin-top: 0;">👥 Escala da Banda</h2>
+                <div id="home-escala" class="escala-grid"></div>
+
+                <h2 class="section-title">🎵 Repertório</h2>
+                <div class="card">
+                    <div id="home-repertorio"></div>
+                    <a href="https://music.youtube.com/playlist?list=PLaHSvJWsvq-haDCoGMYXHrLrN78S0sbEJ" target="_blank"
+                        class="btn-playlist">
+                        <i class="fab fa-youtube"></i> Ouvir Playlist Oficial
+                    </a>
+                </div>
+
+                <h2 class="section-title">📚 Materiais de Apoio</h2>
+                <div id="home-materiais" class="material-list"></div>
+            </div>
+
+            <div id="tab-month" class="tab-content">
+                <h2 class="section-title" style="margin-top: 0;">📅 Escala Mensal</h2>
+                <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 16px;">
+                    Visão geral dos próximos cultos.
+                </p>
+                <div id="month-list"></div>
+            </div>
+
+            <div id="tab-manual" class="tab-content">
+                <h2 class="section-title" style="margin-top: 0;">Resumo Rápido</h2>
+                <div class="card">
+                    <h3 style="font-size: 1rem; margin-bottom: 10px;"><i class="fas fa-clock"
+                            style="color: var(--primary-light);"></i> Horários</h3>
+                    <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.6;">
+                        • <strong>Ensaio e passagem som:</strong> 17h30<br>
+                        • <strong>Oração:</strong> 5 min antes do culto.
+                    </p>
+                </div>
+                <div class="card">
+                    <h3 style="font-size: 1rem; margin-bottom: 10px;"><i class="fas fa-sliders-h"
+                            style="color: var(--primary-light);"></i> Fone e Metrônomo</h3>
+                    <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.6;">
+                        O uso do fone de retorno é obrigatório. <br><br>
+                        <strong>O baterista é o responsável por disparar o Click caso tenha.</strong>
+                    </p>
+                </div>
+
+                <h2 class="section-title">📖 Regras e Parâmetros</h2>
+
+                <div class="card download-card">
+                    <img src="assets/manual.png" alt="Capa do Manual" class="download-cover">
+                    <div class="download-info">
+                        <h3>MANUAL DO MINISTÉRIO de Louvor e Adoração DA JUVENTUDE</h3>
+                        <p>Baixe o PDF completo com o nosso manual.</p>
+                        <a href="./material/MANUAL DO MINISTÉRIO de Louvor e Adoração DA JUVENTUDE.pdf" download
+                            class="btn-download">
+                            <i class="fas fa-download"></i> Baixar Manual
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card download-card">
+                    <img src="assets/parametros.png" alt="Capa Parâmetros" class="download-cover">
+                    <div class="download-info">
+                        <h3>Parâmetros da Banda 2026</h3>
+                        <p>Baixe o PDF completo com os parâmetros.</p>
+                        <a href="./material/Parâmetros para participar do louvor e adoração da juventude.pdf" download
+                            class="btn-download">
+                            <i class="fas fa-download"></i> Baixar Manual
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <nav class="bottom-nav">
+            <div class="nav-item active" onclick="switchTab('tab-home', this)">
+                <i class="fas fa-home"></i>
+                <span>Início</span>
+            </div>
+            <div class="nav-item" onclick="switchTab('tab-month', this)">
+                <i class="fas fa-calendar-alt"></i>
+                <span>Mês</span>
+            </div>
+            <div class="nav-item" onclick="switchTab('tab-manual', this)">
+                <i class="fas fa-book"></i>
+                <span>Manual</span>
+            </div>
+        </nav>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
