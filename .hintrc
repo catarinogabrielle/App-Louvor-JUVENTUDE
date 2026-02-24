@@ -20,6 +20,7 @@
       {
         "button-name": "off"
       }
-    ]
+    ],
+    "manifest-app-name": "off"
   }
 }
