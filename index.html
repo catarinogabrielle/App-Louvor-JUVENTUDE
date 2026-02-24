@@ -56,7 +56,6 @@
         </header>
 
         <main class="content-area">
-
             <div id="tab-home" class="tab-content active">
                 <h2 class="section-title" style="margin-top: 0;">👥 Escala da Banda</h2>
                 <div id="home-escala" class="escala-grid"></div>
@@ -80,6 +79,94 @@
                     Visão geral dos próximos cultos.
                 </p>
                 <div id="month-list"></div>
+            </div>
+
+            <div id="tab-devocional" class="tab-content">
+                <h2 class="section-title" style="margin-top: 0;">📖 Palavra e Propósito</h2>
+                <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 16px;">
+                    Toque nas músicas abaixo para ler o devocional completo da semana.
+                </p>
+
+                <div class="card devocional-card" onclick="toggleDevocional(this)">
+                    <div class="devocional-header">
+                        <div>
+                            <h3 style="color: var(--primary-light); margin-bottom: 4px; font-size: 1.05rem;">1. Os Que
+                                Confiam</h3>
+                            <p style="font-size: 0.8rem; color: var(--text-muted);">Fernandinho • Tema: Inabalabilidade
+                            </p>
+                        </div>
+                        <i class="fas fa-chevron-down toggle-icon"></i>
+                    </div>
+
+                    <div class="devocional-body">
+                        <h4>A Teologia por trás da Canção</h4>
+                        <p>Vivemos em uma geração marcada pela ansiedade, onde tudo muda muito rápido. Os jovens lidam
+                            com pressões na escola, no trabalho e na autoimagem. Esta música não promete a ausência de
+                            problemas, mas foca na nossa <strong>fundação</strong>.</p>
+
+                        <h4>A Base Bíblica</h4>
+                        <ul class="devo-list">
+                            <li><strong>Salmos 125:1:</strong> <em>"Os que confiam no Senhor são como o monte
+                                    Sião..."</em> O que significa ser um monte? Um monte não sai correndo quando o vento
+                                sopra. Ele permanece. A nossa adoração deve declarar essa estabilidade.</li>
+                            <li><strong>Isaías 40:31:</strong> <em>"...renovarão as suas forças; subirão com asas como
+                                    águias..."</em> A águia não bate as asas desesperadamente na tempestade; ela abre as
+                                asas e usa o vento da tempestade para voar mais alto.</li>
+                            <li><strong>Romanos 8:38-39:</strong> Nem morte, nem vida, nem anjos. Nada nos separa. O
+                                apóstolo Paulo escreveu isso para uma igreja que sofria perseguição real, lembrando-os
+                                de que o amor de Cristo é uma âncora absoluta.</li>
+                        </ul>
+
+                        <div class="devo-aplicacao">
+                            <strong><i class="fas fa-guitar"></i> Aplicação para a Banda:</strong>
+                            O arranjo dessa música geralmente "pedala" no mesmo tom durante o verso. A "cozinha" (baixo
+                            e bateria) precisa ser um verdadeiro trator aqui. Esse groove firme e pesado representa o
+                            "Monte Sião". Nós não estamos apenas tocando rock; estamos usando a intensidade da música
+                            como uma declaração de guerra contra o medo. Os vocais devem chamar a igreja para essa
+                            confiança com ousadia!
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card devocional-card" onclick="toggleDevocional(this)">
+                    <div class="devocional-header">
+                        <div>
+                            <h3 style="color: var(--primary-light); margin-bottom: 4px; font-size: 1.05rem;">2. Louvor e
+                                Honra</h3>
+                            <p style="font-size: 0.8rem; color: var(--text-muted);">Kenoly/Baruk • Tema: A Majestade
+                                Eterna</p>
+                        </div>
+                        <i class="fas fa-chevron-down toggle-icon"></i>
+                    </div>
+
+                    <div class="devocional-body">
+                        <h4>A Teologia por trás da Canção</h4>
+                        <p>Muitas vezes, nossos louvores são sobre nós: nossas lutas, nossas vitórias, nossos
+                            sentimentos. Mas "Louvor e Honra" (Ancient of Days) é uma música 100% vertical e
+                            escatológica. Ela tira os olhos de nós e aponta para o Trono de Deus, celebrando quem Ele é,
+                            independentemente do que estamos passando.</p>
+
+                        <h4>A Base Bíblica</h4>
+                        <ul class="devo-list">
+                            <li><strong>Daniel 7:9,14:</strong> <em>"...e o Ancião de Dias se assentou... O seu domínio
+                                    é um domínio eterno."</em> Deus é soberano sobre a história humana. Nenhum problema
+                                político, econômico ou pessoal ameaça o trono do nosso Senhor.</li>
+                            <li><strong>Filipenses 2:10-11:</strong> <em>"Para que ao nome de Jesus se dobre todo
+                                    joelho..."</em> O refrão dessa música é profético. Estamos cantando hoje sobre uma
+                                realidade futura inevitável: um dia, absolutamente todo o universo reconhecerá a Sua
+                                glória.</li>
+                        </ul>
+
+                        <div class="devo-aplicacao">
+                            <strong><i class="fas fa-music"></i> Aplicação para a Banda:</strong>
+                            O estilo Groove/Soul desta música não é desculpa para exibicionismo técnico, mas sim a
+                            expressão bíblica de celebrar a Deus com festa e júbilo! O entrosamento e a precisão da
+                            banda refletem a excelência e a reverência devidas ao "Ancião de Dias". O nosso objetivo
+                            nesse louvor é conduzir os jovens a um "ensaio" do que faremos na eternidade: adorar o Rei
+                            com alegria intensa.
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div id="tab-manual" class="tab-content">
@@ -137,6 +224,10 @@
             <div class="nav-item" onclick="switchTab('tab-month', this)">
                 <i class="fas fa-calendar-alt"></i>
                 <span>Mês</span>
+            </div>
+            <div class="nav-item" onclick="switchTab('tab-devocional', this)">
+                <i class="fas fa-bible"></i>
+                <span>Devocional</span>
             </div>
             <div class="nav-item" onclick="switchTab('tab-manual', this)">
                 <i class="fas fa-book"></i>

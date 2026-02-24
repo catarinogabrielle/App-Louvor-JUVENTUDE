@@ -174,6 +174,9 @@ function switchTab(tabId, element) {
     } else if (tabId === 'tab-month') {
         headerTitle.innerText = "Escala de Março";
         headerSubtitle.innerText = "Visão geral do mês";
+    } else if (tabId === 'tab-devocional') {
+        headerTitle.innerText = "Devocional";
+        headerSubtitle.innerText = "Alinhamento Bíblico e Propósito";
     } else if (tabId === 'tab-manual') {
         headerTitle.innerText = "Manual da Banda";
         headerSubtitle.innerText = "Regras e Parâmetros";
@@ -209,3 +212,7 @@ installBtn.addEventListener('click', async () => {
 closeBtn.addEventListener('click', () => {
     installBanner.style.display = 'none';
 });
+
+function toggleDevocional(cardElement) {
+    cardElement.classList.toggle('open');
+}

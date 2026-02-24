@@ -335,7 +335,7 @@ body {
   color: var(--text-muted);
   cursor: pointer;
   padding: 10px;
-  width: 33%;
+  width: 25%;
 }
 
 .nav-item.active {
@@ -398,4 +398,88 @@ body {
 .btn-download:active {
   transform: scale(0.98);
   background: var(--primary-light);
+}
+
+.devocional-card {
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    border-color 0.2s;
+  user-select: none;
+}
+
+.devocional-card:active {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.devocional-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.devocional-header .toggle-icon {
+  color: var(--text-muted);
+  transition: transform 0.3s ease;
+}
+
+.devocional-body {
+  display: none;
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid var(--card-border);
+  animation: fadeIn 0.4s ease;
+}
+
+.devocional-body h4 {
+  color: var(--text-main);
+  font-size: 0.95rem;
+  margin: 15px 0 5px 0;
+}
+.devocional-body h4:first-child {
+  margin-top: 0;
+}
+
+.devocional-body p {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+.devo-list {
+  margin-left: 20px;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+.devo-list li {
+  margin-bottom: 8px;
+}
+.devo-list li strong {
+  color: var(--text-main);
+}
+
+.devo-aplicacao {
+  margin-top: 20px;
+  font-size: 0.85rem;
+  color: var(--text-main);
+  line-height: 1.6;
+  background: rgba(147, 51, 234, 0.15);
+  padding: 15px;
+  border-radius: 10px;
+  border-left: 4px solid var(--primary);
+}
+
+.devocional-card.open {
+  border-color: var(--primary-light);
+}
+
+.devocional-card.open .toggle-icon {
+  transform: rotate(180deg);
+  color: var(--primary-light);
+}
+
+.devocional-card.open .devocional-body {
+  display: block;
 }
