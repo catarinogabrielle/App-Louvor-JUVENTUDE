@@ -181,3 +181,31 @@ function switchTab(tabId, element) {
 }
 
 window.onload = inicializarApp;
+
+let deferredPrompt;
+const installBanner = document.getElementById('install-banner');
+const installBtn = document.getElementById('install-btn');
+const closeBtn = document.getElementById('close-install-btn');
+
+window.addEventListener('beforeinstallprompt', (e) => {
+    e.preventDefault();
+    deferredPrompt = e;
+    installBanner.style.display = 'flex';
+});
+
+installBtn.addEventListener('click', async () => {
+    installBanner.style.display = 'none';
+
+    if (deferredPrompt) {
+        deferredPrompt.prompt();
+        const { outcome } = await deferredPrompt.userChoice;
+        if (outcome === 'accepted') {
+            console.log('Usuário aceitou a instalação');
+        }
+        deferredPrompt = null;
+    }
+});
+
+closeBtn.addEventListener('click', () => {
+    installBanner.style.display = 'none';
+});

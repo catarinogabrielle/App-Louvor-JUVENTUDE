@@ -32,6 +32,20 @@
 </head>
 
 <body>
+    <div id="install-banner" class="install-banner">
+        <div class="install-info">
+            <img src="assets/image.png" alt="App Icon">
+            <div>
+                <strong>Instalar App</strong>
+                <p>Adicione à tela inicial</p>
+            </div>
+        </div>
+        <div class="install-actions">
+            <button id="install-btn" class="btn-install-action">Baixar</button>
+            <button id="close-install-btn" class="btn-close-action"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+
     <div class="app-container">
         <header class="header">
             <img src="assets/image.png" alt="Logo">
@@ -132,6 +146,14 @@
     </div>
 
     <script src="app.js"></script>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js');
+            });
+        }
+    </script>
 </body>
 
 </html>
