@@ -46,14 +46,12 @@ const dadosDosCultos = [
         destaque: true,
         escala: escala1,
         repertorio: [
-            { numero: 1, titulo: 'Os Que Confiam', info: 'Fernandinho • Tom: Bm • 110 BPM' },
-            { numero: 2, titulo: 'Louvor e Honra', info: 'Ron Kenoly/Baruk • Tom: D • 105 BPM' }
+            { numero: 1, titulo: 'Tua Alegria', info: 'Drops • Tom: B' },
+            { numero: 2, titulo: 'Teu Amor Não Falha', info: 'Paulo César Baruk • Tom: F#m' }
         ],
         materiais: [
-            { tipo: 'pdf', nome: 'Os Que Confiam (COM ANOTAÇÕES)', descricao: 'Cifra com anotações', linkDownload: './material/Os Que Confiam - Fernandinho (COM ANOTAÇÕES).pdf' },
-            { tipo: 'pdf', nome: 'Louvor e Honra (COM ANOTAÇÕES)', descricao: 'Cifra com anotações', linkDownload: './material/Louvor e Honra - Ron Kenoly e Baruk (COM ANOTAÇÕES).pdf' },
-            { tipo: 'pdf', nome: 'Os Que Confiam', descricao: 'Cifra', linkDownload: './material/Os Que Confiam - Fernandinho.pdf' },
-            { tipo: 'pdf', nome: 'Louvor e Honra', descricao: 'Cifra', linkDownload: './material/Louvor e Honra - Ron Kenoly e Baruk.pdf' },
+            { tipo: 'pdf', nome: 'Tua Alegria', descricao: 'Cifra', linkDownload: './material/Tua Alegria.pdf' },
+            { tipo: 'pdf', nome: 'Teu Amor Não Falha', descricao: 'Cifra', linkDownload: './material/Teu Amor Não Falha.pdf' },
             //{ tipo: 'audio', nome: 'Guia Soprano', descricao: 'Áudio MP3', linkDownload: './arquivos/guia-soprano.mp3' }
         ]
     },
@@ -64,14 +62,12 @@ const dadosDosCultos = [
         destaque: false,
         escala: escala2,
         repertorio: [
-            { numero: 1, titulo: 'Os Que Confiam', info: 'Fernandinho • Tom: Bm • 110 BPM' },
-            { numero: 2, titulo: 'Louvor e Honra', info: 'Ron Kenoly/Baruk • Tom: D • 105 BPM' }
+            { numero: 1, titulo: 'Tua Alegria', info: 'Drops • Tom: B' },
+            { numero: 2, titulo: 'Teu Amor Não Falha', info: 'Paulo César Baruk • Tom: F#m' }
         ],
         materiais: [
-            { tipo: 'pdf', nome: 'Os Que Confiam (COM ANOTAÇÕES)', descricao: 'Cifra com anotações', linkDownload: './material/Os Que Confiam - Fernandinho (COM ANOTAÇÕES).pdf' },
-            { tipo: 'pdf', nome: 'Louvor e Honra (COM ANOTAÇÕES)', descricao: 'Cifra com anotações', linkDownload: './material/Louvor e Honra - Ron Kenoly e Baruk (COM ANOTAÇÕES).pdf' },
-            { tipo: 'pdf', nome: 'Os Que Confiam', descricao: 'Cifra', linkDownload: './material/Os Que Confiam - Fernandinho.pdf' },
-            { tipo: 'pdf', nome: 'Louvor e Honra', descricao: 'Cifra', linkDownload: './material/Louvor e Honra - Ron Kenoly e Baruk.pdf' },
+            { tipo: 'pdf', nome: 'Tua Alegria', descricao: 'Cifra', linkDownload: './material/Tua Alegria.pdf' },
+            { tipo: 'pdf', nome: 'Teu Amor Não Falha', descricao: 'Cifra', linkDownload: './material/Teu Amor Não Falha.pdf' },
             //{ tipo: 'audio', nome: 'Guia Soprano', descricao: 'Áudio MP3', linkDownload: './arquivos/guia-soprano.mp3' }
         ]
     },
@@ -82,14 +78,12 @@ const dadosDosCultos = [
         destaque: false,
         escala: escala3,
         repertorio: [
-            { numero: 1, titulo: 'Os Que Confiam', info: 'Fernandinho • Tom: Bm • 110 BPM' },
-            { numero: 2, titulo: 'Louvor e Honra', info: 'Ron Kenoly/Baruk • Tom: D • 105 BPM' }
+            { numero: 1, titulo: 'Tua Alegria', info: 'Drops • Tom: B' },
+            { numero: 2, titulo: 'Teu Amor Não Falha', info: 'Paulo César Baruk • Tom: F#m' }
         ],
         materiais: [
-            { tipo: 'pdf', nome: 'Os Que Confiam (COM ANOTAÇÕES)', descricao: 'Cifra com anotações', linkDownload: './material/Os Que Confiam - Fernandinho (COM ANOTAÇÕES).pdf' },
-            { tipo: 'pdf', nome: 'Louvor e Honra (COM ANOTAÇÕES)', descricao: 'Cifra com anotações', linkDownload: './material/Louvor e Honra - Ron Kenoly e Baruk (COM ANOTAÇÕES).pdf' },
-            { tipo: 'pdf', nome: 'Os Que Confiam', descricao: 'Cifra', linkDownload: './material/Os Que Confiam - Fernandinho.pdf' },
-            { tipo: 'pdf', nome: 'Louvor e Honra', descricao: 'Cifra', linkDownload: './material/Louvor e Honra - Ron Kenoly e Baruk.pdf' },
+            { tipo: 'pdf', nome: 'Tua Alegria', descricao: 'Cifra', linkDownload: './material/Tua Alegria.pdf' },
+            { tipo: 'pdf', nome: 'Teu Amor Não Falha', descricao: 'Cifra', linkDownload: './material/Teu Amor Não Falha.pdf' },
             //{ tipo: 'audio', nome: 'Guia Soprano', descricao: 'Áudio MP3', linkDownload: './arquivos/guia-soprano.mp3' }
         ]
     },
@@ -100,14 +94,12 @@ const dadosDosCultos = [
         destaque: false,
         escala: escala4,
         repertorio: [
-            { numero: 1, titulo: 'Os Que Confiam', info: 'Fernandinho • Tom: Bm • 110 BPM' },
-            { numero: 2, titulo: 'Louvor e Honra', info: 'Ron Kenoly/Baruk • Tom: D • 105 BPM' }
+            { numero: 1, titulo: 'Tua Alegria', info: 'Drops • Tom: B' },
+            { numero: 2, titulo: 'Teu Amor Não Falha', info: 'Paulo César Baruk • Tom: F#m' }
         ],
         materiais: [
-            { tipo: 'pdf', nome: 'Os Que Confiam (COM ANOTAÇÕES)', descricao: 'Cifra com anotações', linkDownload: './material/Os Que Confiam - Fernandinho (COM ANOTAÇÕES).pdf' },
-            { tipo: 'pdf', nome: 'Louvor e Honra (COM ANOTAÇÕES)', descricao: 'Cifra com anotações', linkDownload: './material/Louvor e Honra - Ron Kenoly e Baruk (COM ANOTAÇÕES).pdf' },
-            { tipo: 'pdf', nome: 'Os Que Confiam', descricao: 'Cifra', linkDownload: './material/Os Que Confiam - Fernandinho.pdf' },
-            { tipo: 'pdf', nome: 'Louvor e Honra', descricao: 'Cifra', linkDownload: './material/Louvor e Honra - Ron Kenoly e Baruk.pdf' },
+            { tipo: 'pdf', nome: 'Tua Alegria', descricao: 'Cifra', linkDownload: './material/Tua Alegria.pdf' },
+            { tipo: 'pdf', nome: 'Teu Amor Não Falha', descricao: 'Cifra', linkDownload: './material/Teu Amor Não Falha.pdf' },
             //{ tipo: 'audio', nome: 'Guia Soprano', descricao: 'Áudio MP3', linkDownload: './arquivos/guia-soprano.mp3' }
         ]
     }
