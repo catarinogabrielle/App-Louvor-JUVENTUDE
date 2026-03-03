@@ -1,26 +1,26 @@
 const escala1 = [
     { funcao: 'Ministro', nome: 'Gabi', icone: 'fa-microphone-alt', fullWidth: true },
-    { funcao: 'Vocal', nome: 'Thay / Dyulian', icone: 'fa-microphone' },
-    { funcao: 'Guitarra', nome: 'Rafael', icone: 'fa-guitar' },
+    { funcao: 'Vocal', nome: 'Thay / Poliana', icone: 'fa-microphone' },
+    { funcao: 'Guitarra', nome: '-', icone: 'fa-guitar' },
     { funcao: 'Baixo', nome: 'Henrique', icone: 'fa-guitar', flip: true },
     { funcao: 'Bateria', nome: 'Muryllo', icone: 'fa-drum' },
-    { funcao: 'Teclado', nome: 'Ana', icone: 'fa-keyboard' },
+    { funcao: 'Teclado', nome: 'Helo', icone: 'fa-keyboard' },
     { funcao: 'Violão', nome: 'Gabi', icone: 'fa-guitar' },
 ];
 
 const escala2 = [
     { funcao: 'Ministro', nome: 'Gabi', icone: 'fa-microphone-alt', fullWidth: true },
-    { funcao: 'Vocal', nome: 'Thay / Dyulian', icone: 'fa-microphone' },
-    { funcao: 'Guitarra', nome: 'Rafael', icone: 'fa-guitar' },
-    { funcao: 'Baixo', nome: 'Henrique', icone: 'fa-guitar', flip: true },
-    { funcao: 'Bateria', nome: 'Muryllo', icone: 'fa-drum' },
-    { funcao: 'Teclado', nome: 'Ana', icone: 'fa-keyboard' },
+    { funcao: 'Vocal', nome: 'Dyulian', icone: 'fa-microphone' },
+    { funcao: 'Guitarra', nome: '-', icone: 'fa-guitar' },
+    { funcao: 'Baixo', nome: '-', icone: 'fa-guitar', flip: true },
+    { funcao: 'Bateria', nome: '-', icone: 'fa-drum' },
+    { funcao: 'Teclado', nome: '-', icone: 'fa-keyboard' },
     { funcao: 'Violão', nome: 'Gabi', icone: 'fa-guitar' },
 ];
 
 const escala3 = [
     { funcao: 'Ministro', nome: 'Gabi', icone: 'fa-microphone-alt', fullWidth: true },
-    { funcao: 'Vocal', nome: 'Thay / Dyulian', icone: 'fa-microphone' },
+    { funcao: 'Vocal', nome: 'Thay / Poliana', icone: 'fa-microphone' },
     { funcao: 'Guitarra', nome: 'Rafael', icone: 'fa-guitar' },
     { funcao: 'Baixo', nome: 'Henrique', icone: 'fa-guitar', flip: true },
     { funcao: 'Bateria', nome: 'Muryllo', icone: 'fa-drum' },
@@ -30,30 +30,20 @@ const escala3 = [
 
 const escala4 = [
     { funcao: 'Ministro', nome: 'Gabi', icone: 'fa-microphone-alt', fullWidth: true },
-    { funcao: 'Vocal', nome: 'Thay / Dyulian', icone: 'fa-microphone' },
+    { funcao: 'Vocal', nome: 'Poliana / Dyulian', icone: 'fa-microphone' },
     { funcao: 'Guitarra', nome: 'Rafael', icone: 'fa-guitar' },
     { funcao: 'Baixo', nome: 'Henrique', icone: 'fa-guitar', flip: true },
     { funcao: 'Bateria', nome: 'Muryllo', icone: 'fa-drum' },
-    { funcao: 'Teclado', nome: 'Ana', icone: 'fa-keyboard' },
-    { funcao: 'Violão', nome: 'Gabi', icone: 'fa-guitar' },
-];
-
-const escala5 = [
-    { funcao: 'Ministro', nome: 'Gabi', icone: 'fa-microphone-alt', fullWidth: true },
-    { funcao: 'Vocal', nome: 'Thay / Dyulian', icone: 'fa-microphone' },
-    { funcao: 'Guitarra', nome: 'Rafael', icone: 'fa-guitar' },
-    { funcao: 'Baixo', nome: 'Henrique', icone: 'fa-guitar', flip: true },
-    { funcao: 'Bateria', nome: 'Muryllo', icone: 'fa-drum' },
-    { funcao: 'Teclado', nome: 'Ana', icone: 'fa-keyboard' },
+    { funcao: 'Teclado', nome: 'Helo', icone: 'fa-keyboard' },
     { funcao: 'Violão', nome: 'Gabi', icone: 'fa-guitar' },
 ];
 
 const dadosDosCultos = [
     {
-        id: 'culto-28-fev',
-        dataCurta: '28 Fev',
-        dataCompleta: '28 de Fevereiro',
-        destaque: true, // Mostra na aba "Início"
+        id: 'culto-07-mar',
+        dataCurta: '07 Mar',
+        dataCompleta: '07 de Março',
+        destaque: true,
         escala: escala1,
         repertorio: [
             { numero: 1, titulo: 'Os Que Confiam', info: 'Fernandinho • Tom: Bm • 110 BPM' },
@@ -68,32 +58,58 @@ const dadosDosCultos = [
         ]
     },
     {
-        id: 'culto-07-mar',
-        dataCurta: '07 Mar',
-        dataCompleta: '07 de Março',
-        destaque: false,
-        escala: escala2
-    },
-    {
         id: 'culto-14-mar',
         dataCurta: '14 Mar',
         dataCompleta: '14 de Março',
         destaque: false,
-        escala: escala3
+        escala: escala2,
+        repertorio: [
+            { numero: 1, titulo: 'Os Que Confiam', info: 'Fernandinho • Tom: Bm • 110 BPM' },
+            { numero: 2, titulo: 'Louvor e Honra', info: 'Ron Kenoly/Baruk • Tom: D • 105 BPM' }
+        ],
+        materiais: [
+            { tipo: 'pdf', nome: 'Os Que Confiam (COM ANOTAÇÕES)', descricao: 'Cifra com anotações', linkDownload: './material/Os Que Confiam - Fernandinho (COM ANOTAÇÕES).pdf' },
+            { tipo: 'pdf', nome: 'Louvor e Honra (COM ANOTAÇÕES)', descricao: 'Cifra com anotações', linkDownload: './material/Louvor e Honra - Ron Kenoly e Baruk (COM ANOTAÇÕES).pdf' },
+            { tipo: 'pdf', nome: 'Os Que Confiam', descricao: 'Cifra', linkDownload: './material/Os Que Confiam - Fernandinho.pdf' },
+            { tipo: 'pdf', nome: 'Louvor e Honra', descricao: 'Cifra', linkDownload: './material/Louvor e Honra - Ron Kenoly e Baruk.pdf' },
+            //{ tipo: 'audio', nome: 'Guia Soprano', descricao: 'Áudio MP3', linkDownload: './arquivos/guia-soprano.mp3' }
+        ]
     },
     {
         id: 'culto-21-mar',
         dataCurta: '21 Mar',
         dataCompleta: '21 de Março',
         destaque: false,
-        escala: escala4
+        escala: escala3,
+        repertorio: [
+            { numero: 1, titulo: 'Os Que Confiam', info: 'Fernandinho • Tom: Bm • 110 BPM' },
+            { numero: 2, titulo: 'Louvor e Honra', info: 'Ron Kenoly/Baruk • Tom: D • 105 BPM' }
+        ],
+        materiais: [
+            { tipo: 'pdf', nome: 'Os Que Confiam (COM ANOTAÇÕES)', descricao: 'Cifra com anotações', linkDownload: './material/Os Que Confiam - Fernandinho (COM ANOTAÇÕES).pdf' },
+            { tipo: 'pdf', nome: 'Louvor e Honra (COM ANOTAÇÕES)', descricao: 'Cifra com anotações', linkDownload: './material/Louvor e Honra - Ron Kenoly e Baruk (COM ANOTAÇÕES).pdf' },
+            { tipo: 'pdf', nome: 'Os Que Confiam', descricao: 'Cifra', linkDownload: './material/Os Que Confiam - Fernandinho.pdf' },
+            { tipo: 'pdf', nome: 'Louvor e Honra', descricao: 'Cifra', linkDownload: './material/Louvor e Honra - Ron Kenoly e Baruk.pdf' },
+            //{ tipo: 'audio', nome: 'Guia Soprano', descricao: 'Áudio MP3', linkDownload: './arquivos/guia-soprano.mp3' }
+        ]
     },
     {
         id: 'culto-28-mar',
         dataCurta: '28 Mar',
         dataCompleta: '28 de Março',
         destaque: false,
-        escala: escala5
+        escala: escala4,
+        repertorio: [
+            { numero: 1, titulo: 'Os Que Confiam', info: 'Fernandinho • Tom: Bm • 110 BPM' },
+            { numero: 2, titulo: 'Louvor e Honra', info: 'Ron Kenoly/Baruk • Tom: D • 105 BPM' }
+        ],
+        materiais: [
+            { tipo: 'pdf', nome: 'Os Que Confiam (COM ANOTAÇÕES)', descricao: 'Cifra com anotações', linkDownload: './material/Os Que Confiam - Fernandinho (COM ANOTAÇÕES).pdf' },
+            { tipo: 'pdf', nome: 'Louvor e Honra (COM ANOTAÇÕES)', descricao: 'Cifra com anotações', linkDownload: './material/Louvor e Honra - Ron Kenoly e Baruk (COM ANOTAÇÕES).pdf' },
+            { tipo: 'pdf', nome: 'Os Que Confiam', descricao: 'Cifra', linkDownload: './material/Os Que Confiam - Fernandinho.pdf' },
+            { tipo: 'pdf', nome: 'Louvor e Honra', descricao: 'Cifra', linkDownload: './material/Louvor e Honra - Ron Kenoly e Baruk.pdf' },
+            //{ tipo: 'audio', nome: 'Guia Soprano', descricao: 'Áudio MP3', linkDownload: './arquivos/guia-soprano.mp3' }
+        ]
     }
 ];
 
