@@ -43,7 +43,7 @@ const dadosDosCultos = [
         id: 'culto-07-mar',
         dataCurta: '07 Mar',
         dataCompleta: '07 de Março',
-        destaque: true,
+        destaque: false,
         escala: escala1,
         repertorio: [
             { numero: 1, titulo: 'Tua Alegria', info: 'Drops • Tom: B' },
@@ -59,16 +59,13 @@ const dadosDosCultos = [
         id: 'culto-14-mar',
         dataCurta: '14 Mar',
         dataCompleta: '14 de Março',
-        destaque: false,
+        destaque: true,
         escala: escala2,
         repertorio: [
-            { numero: 1, titulo: 'Tua Alegria', info: 'Drops • Tom: B' },
-            { numero: 2, titulo: 'Teu Amor Não Falha', info: 'Paulo César Baruk • Tom: F#m' }
+            { numero: 1, titulo: 'Sem Musica', info: 'Culto especial' }
         ],
         materiais: [
-            { tipo: 'pdf', nome: 'Tua Alegria', descricao: 'Cifra', linkDownload: './material/Tua Alegria.pdf' },
-            { tipo: 'pdf', nome: 'Teu Amor Não Falha', descricao: 'Cifra', linkDownload: './material/Teu Amor Não Falha.pdf' },
-            //{ tipo: 'audio', nome: 'Guia Soprano', descricao: 'Áudio MP3', linkDownload: './arquivos/guia-soprano.mp3' }
+            { tipo: 'pdf', nome: 'Sem Materiais', descricao: 'Culto especial', linkDownload: './material/' },
         ]
     },
     {
