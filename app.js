@@ -24,47 +24,34 @@ const escala3 = [
     { funcao: 'Guitarra', nome: 'Rafael', icone: 'fa-guitar' },
     { funcao: 'Baixo', nome: 'Henrique', icone: 'fa-guitar', flip: true },
     { funcao: 'Bateria', nome: 'Muryllo', icone: 'fa-drum' },
-    { funcao: 'Teclado', nome: 'Ana', icone: 'fa-keyboard' },
-    { funcao: 'Violão', nome: 'Gabi', icone: 'fa-guitar' },
-];
-
-const escala4 = [
-    { funcao: 'Ministro', nome: 'Gabi', icone: 'fa-microphone-alt', fullWidth: true },
-    { funcao: 'Vocal', nome: 'Poliana / Dyulian', icone: 'fa-microphone' },
-    { funcao: 'Guitarra', nome: 'Rafael', icone: 'fa-guitar' },
-    { funcao: 'Baixo', nome: 'Henrique', icone: 'fa-guitar', flip: true },
-    { funcao: 'Bateria', nome: 'Muryllo', icone: 'fa-drum' },
     { funcao: 'Teclado', nome: 'Helo', icone: 'fa-keyboard' },
     { funcao: 'Violão', nome: 'Gabi', icone: 'fa-guitar' },
 ];
 
+const escala4 = [
+    { funcao: 'Ministro', nome: '-', icone: 'fa-microphone-alt', fullWidth: true },
+    { funcao: 'Vocal', nome: 'Poliana / Dyulian', icone: 'fa-microphone' },
+    { funcao: 'Guitarra', nome: 'Rafael', icone: 'fa-guitar' },
+    { funcao: 'Baixo', nome: 'Henrique', icone: 'fa-guitar', flip: true },
+    { funcao: 'Bateria', nome: 'Muryllo', icone: 'fa-drum' },
+    { funcao: 'Teclado', nome: 'Ana', icone: 'fa-keyboard' },
+    { funcao: 'Violão', nome: '-', icone: 'fa-guitar' },
+];
+
 const dadosDosCultos = [
-    {
-        id: 'culto-14-mar',
-        dataCurta: '14 Mar',
-        dataCompleta: '14 de Março',
-        destaque: true,
-        escala: escala2,
-        repertorio: [
-            { numero: 1, titulo: 'Sem Musica', info: 'Culto especial' }
-        ],
-        materiais: [
-            { tipo: 'pdf', nome: 'Sem Materiais', descricao: 'Culto especial', linkDownload: './material/' },
-        ]
-    },
     {
         id: 'culto-21-mar',
         dataCurta: '21 Mar',
         dataCompleta: '21 de Março',
-        destaque: false,
+        destaque: true,
         escala: escala3,
         repertorio: [
-            { numero: 1, titulo: 'Tua Alegria', info: 'Drops • Tom: B' },
-            { numero: 2, titulo: 'Teu Amor Não Falha', info: 'Paulo César Baruk • Tom: F#m' }
+            { numero: 1, titulo: 'A Hora é Agora', info: 'IPALPHA NOVA • Tom: Bm' },
+            { numero: 2, titulo: 'Êxodo', info: 'Projeto Sola • Tom: Dm' }
         ],
         materiais: [
-            { tipo: 'pdf', nome: 'Tua Alegria', descricao: 'Cifra', linkDownload: './material/Tua Alegria.pdf' },
-            { tipo: 'pdf', nome: 'Teu Amor Não Falha', descricao: 'Cifra', linkDownload: './material/Teu Amor Não Falha.pdf' },
+            { tipo: 'pdf', nome: 'A Hora é Agora', descricao: 'Cifra', linkDownload: './material/A Hora é Agora.pdf' },
+            { tipo: 'pdf', nome: 'Êxodo', descricao: 'Cifra', linkDownload: './material/Êxodo.pdf' },
             //{ tipo: 'audio', nome: 'Guia Soprano', descricao: 'Áudio MP3', linkDownload: './arquivos/guia-soprano.mp3' }
         ]
     },
