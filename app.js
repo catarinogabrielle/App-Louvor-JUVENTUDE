@@ -1,7 +1,8 @@
 const escala1 = [
     { funcao: 'Ministro', nome: 'Gabi', icone: 'fa-microphone-alt', fullWidth: true },
-    { funcao: 'Vocal', nome: 'Thay / Poliana', icone: 'fa-microphone' },
-    { funcao: 'Guitarra', nome: '-', icone: 'fa-guitar' },
+    { funcao: 'Vocal (Solo)', nome: 'Dyulian (Só em Jesus)', icone: 'fa-microphone', fullWidth: true },
+    { funcao: 'Vocal/Back', nome: 'Poliana', icone: 'fa-microphone' },
+    { funcao: 'Guitarra', nome: 'Rafael', icone: 'fa-guitar' },
     { funcao: 'Baixo', nome: 'Henrique', icone: 'fa-guitar', flip: true },
     { funcao: 'Bateria', nome: 'Muryllo', icone: 'fa-drum' },
     { funcao: 'Teclado', nome: 'Helo', icone: 'fa-keyboard' },
@@ -10,40 +11,74 @@ const escala1 = [
 
 const escala2 = [
     { funcao: 'Ministro', nome: 'Gabi', icone: 'fa-microphone-alt', fullWidth: true },
-    { funcao: 'Vocal', nome: 'Dyulian', icone: 'fa-microphone' },
-    { funcao: 'Guitarra', nome: '-', icone: 'fa-guitar' },
-    { funcao: 'Baixo', nome: '-', icone: 'fa-guitar', flip: true },
-    { funcao: 'Bateria', nome: '-', icone: 'fa-drum' },
-    { funcao: 'Teclado', nome: '-', icone: 'fa-keyboard' },
-    { funcao: 'Violão', nome: 'Gabi', icone: 'fa-guitar' },
-];
-
-const escala3 = [
-    { funcao: 'Ministro', nome: 'Gabi', icone: 'fa-microphone-alt', fullWidth: true },
-    { funcao: 'Vocal', nome: 'Thay / Poliana', icone: 'fa-microphone' },
-    { funcao: 'Guitarra', nome: 'Rafael', icone: 'fa-guitar' },
-    { funcao: 'Baixo', nome: 'Henrique', icone: 'fa-guitar', flip: true },
-    { funcao: 'Bateria', nome: 'Muryllo', icone: 'fa-drum' },
-    { funcao: 'Teclado', nome: 'Helo', icone: 'fa-keyboard' },
-    { funcao: 'Violão', nome: 'Gabi', icone: 'fa-guitar' },
-];
-
-const escala4 = [
-    { funcao: 'Ministro', nome: '-', icone: 'fa-microphone-alt', fullWidth: true },
-    { funcao: 'Vocal', nome: 'Poliana / Dyulian', icone: 'fa-microphone' },
+    { funcao: 'Vocal/Back', nome: 'Poliana', icone: 'fa-microphone' },
     { funcao: 'Guitarra', nome: 'Rafael', icone: 'fa-guitar' },
     { funcao: 'Baixo', nome: 'Henrique', icone: 'fa-guitar', flip: true },
     { funcao: 'Bateria', nome: 'Muryllo', icone: 'fa-drum' },
     { funcao: 'Teclado', nome: 'Ana', icone: 'fa-keyboard' },
+    { funcao: 'Violão', nome: 'Gabi', icone: 'fa-guitar' },
+];
+
+const escala3 = [
+    { funcao: 'Ministro', nome: '-', icone: 'fa-microphone-alt', fullWidth: true },
+    { funcao: 'Vocal/Back', nome: '-', icone: 'fa-microphone' },
+    { funcao: 'Guitarra', nome: '-', icone: 'fa-guitar' },
+    { funcao: 'Baixo', nome: '-', icone: 'fa-guitar', flip: true },
+    { funcao: 'Bateria', nome: '-', icone: 'fa-drum' },
+    { funcao: 'Teclado', nome: '-', icone: 'fa-keyboard' },
+    { funcao: 'Violão', nome: '-', icone: 'fa-guitar' },
+];
+
+const escala4 = [
+    { funcao: 'Ministro', nome: '-', icone: 'fa-microphone-alt', fullWidth: true },
+    { funcao: 'Vocal/Back', nome: '-', icone: 'fa-microphone' },
+    { funcao: 'Guitarra', nome: '-', icone: 'fa-guitar' },
+    { funcao: 'Baixo', nome: '-', icone: 'fa-guitar', flip: true },
+    { funcao: 'Bateria', nome: '-', icone: 'fa-drum' },
+    { funcao: 'Teclado', nome: '-', icone: 'fa-keyboard' },
     { funcao: 'Violão', nome: '-', icone: 'fa-guitar' },
 ];
 
 const dadosDosCultos = [
     {
-        id: 'culto-21-mar',
-        dataCurta: '21 Mar',
-        dataCompleta: '21 de Março',
+        id: 'culto-04-abr',
+        dataCurta: '04 Abr',
+        dataCompleta: '04 de Abril',
         destaque: true,
+        escala: escala1,
+        repertorio: [
+            { numero: 2, titulo: 'Êxodo', info: 'Projeto Sola • Tom: Dm • BPM: 77' },
+            { numero: 2, titulo: 'Estarás Comigo (Salvação)', info: 'Boanova feat. ProjetoSola • Tom: B • BPM: 102' },
+            { numero: 3, titulo: 'Só em Jesus', info: 'Novo Canto • Tom: C • BPM: 62' }
+        ],
+        materiais: [
+            { tipo: 'pdf', nome: 'Êxodo', descricao: 'Cifra', linkDownload: './material/Êxodo.pdf' },
+            { tipo: 'pdf', nome: 'Estarás Comigo (Salvação)', descricao: 'Cifra', linkDownload: './material/Estarás Comigo (Salvação).pdf' },
+            { tipo: 'pdf', nome: 'Só em Jesus', descricao: 'Cifra', linkDownload: './material/Só em Jesus.pdf' },
+            { tipo: 'pdf', nome: 'Só em Jesus (LETRA)', descricao: 'Letra', linkDownload: './material/Só em Jesus (Letra).pdf' }
+        ]
+    },
+    {
+        id: 'culto-11-abr',
+        dataCurta: '11 Abr',
+        dataCompleta: '11 de Abril',
+        destaque: false,
+        escala: escala2,
+        repertorio: [
+            { numero: 1, titulo: 'A Hora é Agora', info: 'IPALPHA NOVA • Tom: Bm' },
+            { numero: 2, titulo: 'Êxodo', info: 'Projeto Sola • Tom: Dm' }
+        ],
+        materiais: [
+            { tipo: 'pdf', nome: 'A Hora é Agora', descricao: 'Cifra', linkDownload: './material/A Hora é Agora.pdf' },
+            { tipo: 'pdf', nome: 'Êxodo', descricao: 'Cifra', linkDownload: './material/Êxodo.pdf' }
+            //{ tipo: 'audio', nome: 'Guia Soprano', descricao: 'Áudio MP3', linkDownload: './material/guia-soprano.mp3' }
+        ]
+    },
+    {
+        id: 'culto-18-abr',
+        dataCurta: '18 Abr',
+        dataCompleta: '18 de Abril',
+        destaque: false,
         escala: escala3,
         repertorio: [
             { numero: 1, titulo: 'A Hora é Agora', info: 'IPALPHA NOVA • Tom: Bm' },
@@ -51,24 +86,24 @@ const dadosDosCultos = [
         ],
         materiais: [
             { tipo: 'pdf', nome: 'A Hora é Agora', descricao: 'Cifra', linkDownload: './material/A Hora é Agora.pdf' },
-            { tipo: 'pdf', nome: 'Êxodo', descricao: 'Cifra', linkDownload: './material/Êxodo.pdf' },
-            //{ tipo: 'audio', nome: 'Guia Soprano', descricao: 'Áudio MP3', linkDownload: './arquivos/guia-soprano.mp3' }
+            { tipo: 'pdf', nome: 'Êxodo', descricao: 'Cifra', linkDownload: './material/Êxodo.pdf' }
+            //{ tipo: 'audio', nome: 'Guia Soprano', descricao: 'Áudio MP3', linkDownload: './material/guia-soprano.mp3' }
         ]
     },
     {
-        id: 'culto-28-mar',
-        dataCurta: '28 Mar',
-        dataCompleta: '28 de Março',
+        id: 'culto-25-abr',
+        dataCurta: '25 Abr',
+        dataCompleta: '25 de Abril',
         destaque: false,
         escala: escala4,
         repertorio: [
-            { numero: 1, titulo: 'Tua Alegria', info: 'Drops • Tom: B' },
-            { numero: 2, titulo: 'Teu Amor Não Falha', info: 'Paulo César Baruk • Tom: F#m' }
+            { numero: 1, titulo: 'A Hora é Agora', info: 'IPALPHA NOVA • Tom: Bm' },
+            { numero: 2, titulo: 'Êxodo', info: 'Projeto Sola • Tom: Dm' }
         ],
         materiais: [
-            { tipo: 'pdf', nome: 'Tua Alegria', descricao: 'Cifra', linkDownload: './material/Tua Alegria.pdf' },
-            { tipo: 'pdf', nome: 'Teu Amor Não Falha', descricao: 'Cifra', linkDownload: './material/Teu Amor Não Falha.pdf' },
-            //{ tipo: 'audio', nome: 'Guia Soprano', descricao: 'Áudio MP3', linkDownload: './arquivos/guia-soprano.mp3' }
+            { tipo: 'pdf', nome: 'A Hora é Agora', descricao: 'Cifra', linkDownload: './material/A Hora é Agora.pdf' },
+            { tipo: 'pdf', nome: 'Êxodo', descricao: 'Cifra', linkDownload: './material/Êxodo.pdf' }
+            //{ tipo: 'audio', nome: 'Guia Soprano', descricao: 'Áudio MP3', linkDownload: './material/guia-soprano.mp3' }
         ]
     }
 ];
