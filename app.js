@@ -48,7 +48,7 @@ const dadosDosCultos = [
         escala: escala1,
         repertorio: [
             { numero: 2, titulo: 'Êxodo', info: 'Projeto Sola • Tom: Dm • BPM: 77' },
-            { numero: 2, titulo: 'Estarás Comigo (Salvação)', info: 'Boanova feat. ProjetoSola • Tom: B • BPM: 102' },
+            { numero: 2, titulo: 'Estarás Comigo (Salvação)', info: 'Boanova feat. Projeto Sola • Tom: B • BPM: 102' },
             { numero: 3, titulo: 'Só em Jesus', info: 'Novo Canto • Tom: C • BPM: 62' }
         ],
         materiais: [
