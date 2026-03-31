@@ -1,7 +1,7 @@
 const escala1 = [
     { funcao: 'Ministro', nome: 'Gabi', icone: 'fa-microphone-alt', fullWidth: true },
     { funcao: 'Vocal (Solo)', nome: 'Dyulian (Só em Jesus)', icone: 'fa-microphone', fullWidth: true },
-    { funcao: 'Vocal/Back', nome: 'Poliana', icone: 'fa-microphone' },
+    { funcao: 'Vocal/Back', nome: 'Poliana / Dyulian', icone: 'fa-microphone' },
     { funcao: 'Guitarra', nome: 'Rafael', icone: 'fa-guitar' },
     { funcao: 'Baixo', nome: 'Henrique', icone: 'fa-guitar', flip: true },
     { funcao: 'Bateria', nome: 'Muryllo', icone: 'fa-drum' },
