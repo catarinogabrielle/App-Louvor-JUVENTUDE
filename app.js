@@ -41,37 +41,18 @@ const escala4 = [
 
 const dadosDosCultos = [
     {
-        id: 'culto-04-abr',
-        dataCurta: '04 Abr',
-        dataCompleta: '04 de Abril',
-        destaque: true,
-        escala: escala1,
-        repertorio: [
-            { numero: 2, titulo: 'Êxodo', info: 'Projeto Sola • Tom: Dm • BPM: 77' },
-            { numero: 2, titulo: 'Estarás Comigo (Salvação)', info: 'Boanova feat. Projeto Sola • Tom: B • BPM: 102' },
-            { numero: 3, titulo: 'Só em Jesus', info: 'Novo Canto • Tom: C • BPM: 62' }
-        ],
-        materiais: [
-            { tipo: 'pdf', nome: 'Êxodo', descricao: 'Cifra', linkDownload: './material/Êxodo.pdf' },
-            { tipo: 'pdf', nome: 'Estarás Comigo (Salvação)', descricao: 'Cifra', linkDownload: './material/Estarás Comigo (Salvação).pdf' },
-            { tipo: 'pdf', nome: 'Só em Jesus', descricao: 'Cifra', linkDownload: './material/Só em Jesus.pdf' },
-            { tipo: 'pdf', nome: 'Só em Jesus (LETRA)', descricao: 'Letra', linkDownload: './material/Só em Jesus (Letra).pdf' }
-        ]
-    },
-    {
         id: 'culto-11-abr',
         dataCurta: '11 Abr',
         dataCompleta: '11 de Abril',
-        destaque: false,
+        destaque: true,
         escala: escala2,
         repertorio: [
-            { numero: 1, titulo: 'A Hora é Agora', info: 'IPALPHA NOVA • Tom: Bm' },
-            { numero: 2, titulo: 'Êxodo', info: 'Projeto Sola • Tom: Dm' }
+            { numero: 1, titulo: 'Tua Alegria', info: 'Drops INA • Tom: B • BPM: 130' },
+            { numero: 2, titulo: 'Me Rendo a Ti', info: 'IPALPHA • Tom: F • BPM: 71' }
         ],
         materiais: [
-            { tipo: 'pdf', nome: 'A Hora é Agora', descricao: 'Cifra', linkDownload: './material/A Hora é Agora.pdf' },
-            { tipo: 'pdf', nome: 'Êxodo', descricao: 'Cifra', linkDownload: './material/Êxodo.pdf' }
-            //{ tipo: 'audio', nome: 'Guia Soprano', descricao: 'Áudio MP3', linkDownload: './material/guia-soprano.mp3' }
+            { tipo: 'pdf', nome: 'Tua Alegria', descricao: 'Cifra', linkDownload: './material/Tua Alegria.pdf' },
+            { tipo: 'pdf', nome: 'Me Rendo a Ti', descricao: 'Cifra', linkDownload: './material/Me Rendo a Ti.pdf' }
         ]
     },
     {
@@ -87,7 +68,6 @@ const dadosDosCultos = [
         materiais: [
             { tipo: 'pdf', nome: 'A Hora é Agora', descricao: 'Cifra', linkDownload: './material/A Hora é Agora.pdf' },
             { tipo: 'pdf', nome: 'Êxodo', descricao: 'Cifra', linkDownload: './material/Êxodo.pdf' }
-            //{ tipo: 'audio', nome: 'Guia Soprano', descricao: 'Áudio MP3', linkDownload: './material/guia-soprano.mp3' }
         ]
     },
     {
@@ -103,7 +83,6 @@ const dadosDosCultos = [
         materiais: [
             { tipo: 'pdf', nome: 'A Hora é Agora', descricao: 'Cifra', linkDownload: './material/A Hora é Agora.pdf' },
             { tipo: 'pdf', nome: 'Êxodo', descricao: 'Cifra', linkDownload: './material/Êxodo.pdf' }
-            //{ tipo: 'audio', nome: 'Guia Soprano', descricao: 'Áudio MP3', linkDownload: './material/guia-soprano.mp3' }
         ]
     }
 ];
