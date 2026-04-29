@@ -32,7 +32,7 @@ const dadosDosCultos = [
         }),
         repertorio: [
             { numero: 1, titulo: 'Louvor e Honra', info: 'Ron Kenoly e Baruk • Tom: D • BPM: 92' },
-            { numero: 2, titulo: 'TEU POVO', info: 'O Canto das Igrejas, Paulo Cesar Baruk • Tom: Ab • BPM: 68' }
+            { numero: 2, titulo: 'TEU POVO', info: 'O Canto das Igrejas • Tom: Ab • BPM: 68' }
         ],
         materiais: [
             { tipo: 'pdf', nome: 'Louvor e Honra - Ron Kenoly e Baruk', descricao: 'Cifra', linkDownload: './material/Louvor e Honra - Ron Kenoly e Baruk.pdf' },
