@@ -51,7 +51,7 @@ const dadosDosCultos = [
             baixo: 'Henrique',
             bateria: 'Muryllo',
             teclado: 'Helo',
-            violao: ''
+            violao: 'Gabi'
         }),
         repertorio: [
             { numero: 1, titulo: 'A Hora é Agora', info: 'IPALPHA NOVA • Tom: Bm' },
