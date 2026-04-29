@@ -1,67 +1,58 @@
-const escala1 = [
-    { funcao: 'Ministro', nome: 'Gabi', icone: 'fa-microphone-alt', fullWidth: true },
-    { funcao: 'Vocal (Solo)', nome: 'Dyulian (Só em Jesus)', icone: 'fa-microphone', fullWidth: true },
-    { funcao: 'Vocal/Back', nome: 'Poliana / Dyulian', icone: 'fa-microphone' },
-    { funcao: 'Guitarra', nome: 'Rafael', icone: 'fa-guitar' },
-    { funcao: 'Baixo', nome: 'Henrique', icone: 'fa-guitar', flip: true },
-    { funcao: 'Bateria', nome: 'Muryllo', icone: 'fa-drum' },
-    { funcao: 'Teclado', nome: 'Helo', icone: 'fa-keyboard' },
-    { funcao: 'Violão', nome: 'Gabi', icone: 'fa-guitar' },
+const ESTRUTURA_BANDA = [
+    { id: 'ministro', funcao: 'Ministro', icone: 'fa-microphone-alt', fullWidth: true },
+    { id: 'vocal', funcao: 'Vocal/Back', icone: 'fa-microphone' },
+    { id: 'guitarra', funcao: 'Guitarra', icone: 'fa-guitar' },
+    { id: 'baixo', funcao: 'Baixo', icone: 'fa-guitar', flip: true },
+    { id: 'bateria', funcao: 'Bateria', icone: 'fa-drum' },
+    { id: 'teclado', funcao: 'Teclado', icone: 'fa-keyboard' },
+    { id: 'violao', funcao: 'Violão', icone: 'fa-guitar' },
 ];
 
-const escala2 = [
-    { funcao: 'Ministro', nome: 'Gabi', icone: 'fa-microphone-alt', fullWidth: true },
-    { funcao: 'Vocal (Solo)', nome: 'Poliana (Me Rendo a Ti)', icone: 'fa-microphone', fullWidth: true },
-    { funcao: 'Vocal/Back', nome: 'Gabi / Poliana', icone: 'fa-microphone' },
-    { funcao: 'Guitarra', nome: 'Rafael', icone: 'fa-guitar' },
-    { funcao: 'Baixo', nome: 'Henrique', icone: 'fa-guitar', flip: true },
-    { funcao: 'Bateria', nome: 'Muryllo', icone: 'fa-drum' },
-    { funcao: 'Teclado', nome: 'Ana', icone: 'fa-keyboard' },
-    { funcao: 'Violão', nome: 'Gabi', icone: 'fa-guitar' },
-];
-
-const escala3 = [
-    { funcao: 'Ministro', nome: '-', icone: 'fa-microphone-alt', fullWidth: true },
-    { funcao: 'Vocal/Back', nome: '-', icone: 'fa-microphone' },
-    { funcao: 'Guitarra', nome: '-', icone: 'fa-guitar' },
-    { funcao: 'Baixo', nome: '-', icone: 'fa-guitar', flip: true },
-    { funcao: 'Bateria', nome: '-', icone: 'fa-drum' },
-    { funcao: 'Teclado', nome: '-', icone: 'fa-keyboard' },
-    { funcao: 'Violão', nome: '-', icone: 'fa-guitar' },
-];
-
-const escala4 = [
-    { funcao: 'Ministro', nome: '-', icone: 'fa-microphone-alt', fullWidth: true },
-    { funcao: 'Vocal/Back', nome: '-', icone: 'fa-microphone' },
-    { funcao: 'Guitarra', nome: '-', icone: 'fa-guitar' },
-    { funcao: 'Baixo', nome: '-', icone: 'fa-guitar', flip: true },
-    { funcao: 'Bateria', nome: '-', icone: 'fa-drum' },
-    { funcao: 'Teclado', nome: '-', icone: 'fa-keyboard' },
-    { funcao: 'Violão', nome: '-', icone: 'fa-guitar' },
-];
+function gerarEscala(membros = {}) {
+    return ESTRUTURA_BANDA.map(papel => ({
+        ...papel,
+        nome: membros[papel.id] || '-'
+    }));
+}
 
 const dadosDosCultos = [
     {
-        id: 'culto-11-abr',
-        dataCurta: '11 Abr',
-        dataCompleta: '11 de Abril',
+        id: 'culto-02-mai',
+        dataCurta: '02 Mai',
+        dataCompleta: '02 de Maio',
         destaque: true,
-        escala: escala2,
+        escala: gerarEscala({
+            ministro: 'Gabi',
+            vocal: 'Poliana',
+            guitarra: 'Rafael',
+            baixo: 'Henrique',
+            bateria: 'Muryllo',
+            teclado: 'Ana',
+            violao: 'Gabi'
+        }),
         repertorio: [
-            { numero: 1, titulo: 'Tua Alegria', info: 'Drops INA • Tom: B • BPM: 130' },
-            { numero: 2, titulo: 'Me Rendo a Ti', info: 'IPALPHA • Tom: F • BPM: 71' }
+            { numero: 1, titulo: 'Louvor e Honra - Ron Kenoly e Baruk', info: 'IPALPHA • Tom: F • BPM: 92' },
+            { numero: 2, titulo: 'TEU POVO', info: 'O Canto das Igrejas, Paulo Cesar Baruk • Tom: B • BPM: 68' }
         ],
         materiais: [
-            { tipo: 'pdf', nome: 'Tua Alegria', descricao: 'Cifra', linkDownload: './material/Tua Alegria.pdf' },
-            { tipo: 'pdf', nome: 'Me Rendo a Ti', descricao: 'Cifra', linkDownload: './material/Me Rendo a Ti.pdf' }
+            { tipo: 'pdf', nome: 'Louvor e Honra - Ron Kenoly e Baruk', descricao: 'Cifra', linkDownload: './material/Louvor e Honra - Ron Kenoly e Baruk.pdf' },
+            { tipo: 'pdf', nome: 'TEU POVO', descricao: 'Cifra', linkDownload: './material/Teu Povo.pdf' }
         ]
     },
     {
-        id: 'culto-18-abr',
-        dataCurta: '18 Abr',
-        dataCompleta: '18 de Abril',
+        id: 'culto-09-mai',
+        dataCurta: '09 Mai',
+        dataCompleta: '09 de Maio',
         destaque: false,
-        escala: escala3,
+        escala: gerarEscala({
+            ministro: 'Gabi',
+            vocal: 'Dyulian',
+            guitarra: 'Rafael',
+            baixo: 'Henrique',
+            bateria: 'Muryllo',
+            teclado: 'Helo',
+            violao: ''
+        }),
         repertorio: [
             { numero: 1, titulo: 'A Hora é Agora', info: 'IPALPHA NOVA • Tom: Bm' },
             { numero: 2, titulo: 'Êxodo', info: 'Projeto Sola • Tom: Dm' }
@@ -72,11 +63,65 @@ const dadosDosCultos = [
         ]
     },
     {
-        id: 'culto-25-abr',
-        dataCurta: '25 Abr',
-        dataCompleta: '25 de Abril',
+        id: 'culto-16-mai',
+        dataCurta: '16 Mai',
+        dataCompleta: '16 de Maio',
         destaque: false,
-        escala: escala4,
+        escala: gerarEscala({
+            ministro: 'Gabi',
+            vocal: 'Thai',
+            guitarra: '-',
+            baixo: '-',
+            bateria: '-',
+            teclado: '-',
+            violao: 'Gabi'
+        }),
+        repertorio: [
+            { numero: 1, titulo: 'A Hora é Agora', info: 'IPALPHA NOVA • Tom: Bm' },
+            { numero: 2, titulo: 'Êxodo', info: 'Projeto Sola • Tom: Dm' }
+        ],
+        materiais: [
+            { tipo: 'pdf', nome: 'A Hora é Agora', descricao: 'Cifra', linkDownload: './material/A Hora é Agora.pdf' },
+            { tipo: 'pdf', nome: 'Êxodo', descricao: 'Cifra', linkDownload: './material/Êxodo.pdf' }
+        ]
+    },
+    {
+        id: 'culto-23-mai',
+        dataCurta: '23 Mai',
+        dataCompleta: '23 de Maio',
+        destaque: false,
+        escala: gerarEscala({
+            ministro: 'Gabi',
+            vocal: 'Dyulian',
+            guitarra: 'Rafael',
+            baixo: 'Henrique',
+            bateria: 'Muryllo',
+            teclado: 'Helo',
+            violao: 'Gabi'
+        }),
+        repertorio: [
+            { numero: 1, titulo: 'A Hora é Agora', info: 'IPALPHA NOVA • Tom: Bm' },
+            { numero: 2, titulo: 'Êxodo', info: 'Projeto Sola • Tom: Dm' }
+        ],
+        materiais: [
+            { tipo: 'pdf', nome: 'A Hora é Agora', descricao: 'Cifra', linkDownload: './material/A Hora é Agora.pdf' },
+            { tipo: 'pdf', nome: 'Êxodo', descricao: 'Cifra', linkDownload: './material/Êxodo.pdf' }
+        ]
+    },
+    {
+        id: 'culto-30-mai',
+        dataCurta: '30 Mai',
+        dataCompleta: '30 de Maio',
+        destaque: false,
+        escala: gerarEscala({
+            ministro: 'Gabi',
+            vocal: 'Poliana',
+            guitarra: 'Rafael',
+            baixo: 'Henrique',
+            bateria: 'Muryllo',
+            teclado: 'Ana',
+            violao: 'Gabi'
+        }),
         repertorio: [
             { numero: 1, titulo: 'A Hora é Agora', info: 'IPALPHA NOVA • Tom: Bm' },
             { numero: 2, titulo: 'Êxodo', info: 'Projeto Sola • Tom: Dm' }
