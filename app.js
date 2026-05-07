@@ -20,7 +20,7 @@ const dadosDosCultos = [
         id: 'culto-02-mai',
         dataCurta: '02 Mai',
         dataCompleta: '02 de Maio',
-        destaque: true,
+        destaque: false,
         escala: gerarEscala({
             ministro: 'Gabi',
             vocal: 'Poliana',
@@ -43,23 +43,23 @@ const dadosDosCultos = [
         id: 'culto-09-mai',
         dataCurta: '09 Mai',
         dataCompleta: '09 de Maio',
-        destaque: false,
+        destaque: true,
         escala: gerarEscala({
-            ministro: 'Gabi',
+            ministro: 'Dyulian',
             vocal: 'Dyulian',
             guitarra: 'Rafael',
             baixo: 'Henrique',
             bateria: 'Muryllo',
             teclado: 'Helo',
-            violao: 'Gabi'
+            violao: 'Fernando'
         }),
         repertorio: [
-            { numero: 1, titulo: 'A Hora é Agora', info: 'IPALPHA NOVA • Tom: Bm' },
-            { numero: 2, titulo: 'Êxodo', info: 'Projeto Sola • Tom: Dm' }
+            { numero: 1, titulo: 'Teu Amor não Falha', info: 'Nivea Soares • Tom: Am' },
+            { numero: 2, titulo: 'Pra Onde Eu Irei?', info: 'Morada • Tom: E' }
         ],
         materiais: [
-            { tipo: 'pdf', nome: 'A Hora é Agora', descricao: 'Cifra', linkDownload: './material/A Hora é Agora.pdf' },
-            { tipo: 'pdf', nome: 'Êxodo', descricao: 'Cifra', linkDownload: './material/Êxodo.pdf' }
+            { tipo: 'pdf', nome: 'Teu Amor não Falha', descricao: 'Cifra', linkDownload: './material/Cifra Club - Nívea Soares - Teu Amor Não Falha.pdf' },
+            { tipo: 'pdf', nome: 'Pra Onde Eu Irei?', descricao: 'Cifra', linkDownload: './material/Cifra Club - MORADA - Para Onde Eu Irei_.pdf' }
         ]
     },
     {
