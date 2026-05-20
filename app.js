@@ -43,7 +43,7 @@ const dadosDosCultos = [
         id: 'culto-09-mai',
         dataCurta: '09 Mai',
         dataCompleta: '09 de Maio',
-        destaque: true,
+        destaque: false,
         escala: gerarEscala({
             ministro: 'Dyulian',
             vocal: 'Dyulian',
@@ -69,7 +69,7 @@ const dadosDosCultos = [
         destaque: false,
         escala: gerarEscala({
             ministro: 'Gabi',
-            vocal: 'Thai',
+            vocal: '-',
             guitarra: '-',
             baixo: '-',
             bateria: '-',
@@ -77,11 +77,11 @@ const dadosDosCultos = [
             violao: 'Gabi'
         }),
         repertorio: [
-            { numero: 1, titulo: 'A Hora é Agora', info: 'IPALPHA NOVA • Tom: Bm' },
+            { numero: 1, titulo: 'Tua Alegria', info: 'Drops • Tom: B' },
             { numero: 2, titulo: 'Êxodo', info: 'Projeto Sola • Tom: Dm' }
         ],
         materiais: [
-            { tipo: 'pdf', nome: 'A Hora é Agora', descricao: 'Cifra', linkDownload: './material/A Hora é Agora.pdf' },
+            { tipo: 'pdf', nome: 'Tua Alegria', descricao: 'Cifra', linkDownload: './material/Tua Alegria.pdf' },
             { tipo: 'pdf', nome: 'Êxodo', descricao: 'Cifra', linkDownload: './material/Êxodo.pdf' }
         ]
     },
@@ -89,23 +89,23 @@ const dadosDosCultos = [
         id: 'culto-23-mai',
         dataCurta: '23 Mai',
         dataCompleta: '23 de Maio',
-        destaque: false,
+        destaque: true,
         escala: gerarEscala({
             ministro: 'Gabi',
             vocal: 'Dyulian',
             guitarra: 'Rafael',
             baixo: 'Henrique',
             bateria: 'Muryllo',
-            teclado: 'Helo',
+            teclado: '-',
             violao: 'Gabi'
         }),
         repertorio: [
-            { numero: 1, titulo: 'A Hora é Agora', info: 'IPALPHA NOVA • Tom: Bm' },
-            { numero: 2, titulo: 'Êxodo', info: 'Projeto Sola • Tom: Dm' }
+            { numero: 1, titulo: 'Tua Alegria', info: 'Drops • Tom: B' },
+            { numero: 2, titulo: 'És Mais Forte', info: 'Hillsong • Tom: C' }
         ],
         materiais: [
-            { tipo: 'pdf', nome: 'A Hora é Agora', descricao: 'Cifra', linkDownload: './material/A Hora é Agora.pdf' },
-            { tipo: 'pdf', nome: 'Êxodo', descricao: 'Cifra', linkDownload: './material/Êxodo.pdf' }
+            { tipo: 'pdf', nome: 'Tua Alegria', descricao: 'Cifra', linkDownload: './material/Tua Alegria.pdf' },
+            { tipo: 'pdf', nome: 'És Mais Forte', descricao: 'Cifra', linkDownload: './material/És mais forte.pdf' }
         ]
     },
     {
@@ -119,7 +119,7 @@ const dadosDosCultos = [
             guitarra: 'Rafael',
             baixo: 'Henrique',
             bateria: 'Muryllo',
-            teclado: 'Ana',
+            teclado: 'Helo',
             violao: 'Gabi'
         }),
         repertorio: [
