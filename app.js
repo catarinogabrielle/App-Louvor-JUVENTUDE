@@ -89,7 +89,7 @@ const dadosDosCultos = [
         id: 'culto-23-mai',
         dataCurta: '23 Mai',
         dataCompleta: '23 de Maio',
-        destaque: true,
+        destaque: false,
         escala: gerarEscala({
             ministro: 'Gabi',
             vocal: 'Dyulian',
@@ -112,10 +112,10 @@ const dadosDosCultos = [
         id: 'culto-30-mai',
         dataCurta: '30 Mai',
         dataCompleta: '30 de Maio',
-        destaque: false,
+        destaque: true,
         escala: gerarEscala({
             ministro: 'Gabi',
-            vocal: 'Poliana',
+            vocal: 'Poliana - (Não Há Outro)',
             guitarra: 'Rafael',
             baixo: 'Henrique',
             bateria: 'Muryllo',
@@ -123,12 +123,12 @@ const dadosDosCultos = [
             violao: 'Gabi'
         }),
         repertorio: [
-            { numero: 1, titulo: 'A Hora é Agora', info: 'IPALPHA NOVA • Tom: Bm' },
-            { numero: 2, titulo: 'Êxodo', info: 'Projeto Sola • Tom: Dm' }
+            { numero: 1, titulo: 'Batendo à Porta', info: 'Fhop • Tom: C#m' },
+            { numero: 2, titulo: 'Não Há Outro', info: 'Dunamis • Tom: E' }
         ],
         materiais: [
-            { tipo: 'pdf', nome: 'A Hora é Agora', descricao: 'Cifra', linkDownload: './material/A Hora é Agora.pdf' },
-            { tipo: 'pdf', nome: 'Êxodo', descricao: 'Cifra', linkDownload: './material/Êxodo.pdf' }
+            { tipo: 'pdf', nome: 'Batendo à Porta', descricao: 'Cifra', linkDownload: './material/Batendo à Porta.pdf' },
+            { tipo: 'pdf', nome: 'Não Há Outro', descricao: 'Cifra', linkDownload: './material/Não Há Outro.pdf' }
         ]
     }
 ];
