@@ -123,8 +123,8 @@ const dadosDosCultos = [
             violao: 'Gabi'
         }),
         repertorio: [
-            { numero: 1, titulo: 'Batendo à Porta', info: 'Fhop • Tom: C#m' },
-            { numero: 2, titulo: 'Não Há Outro', info: 'Dunamis • Tom: E' }
+            { numero: 1, titulo: 'Batendo à Porta', info: 'Fhop Music • Tom: C#m' },
+            { numero: 2, titulo: 'Não Há Outro', info: 'Dunamis Music • Tom: E' }
         ],
         materiais: [
             { tipo: 'pdf', nome: 'Batendo à Porta', descricao: 'Cifra', linkDownload: './material/Batendo à Porta.pdf' },
