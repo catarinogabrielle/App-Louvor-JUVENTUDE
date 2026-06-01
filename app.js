@@ -27,7 +27,7 @@ const dadosDosCultos = [
             guitarra: 'Rafael',
             baixo: 'Henrique',
             bateria: 'Muryllo',
-            teclado: '-',
+            teclado: 'Helo',
             violao: 'Gabi'
         }),
         repertorio: [
@@ -65,7 +65,7 @@ const dadosDosCultos = [
             guitarra: 'Rafael',
             baixo: 'Henrique',
             bateria: 'Muryllo',
-            teclado: '-',
+            teclado: 'Helo',
             violao: 'Gabi'
         }),
         repertorio: [
@@ -88,7 +88,7 @@ const dadosDosCultos = [
             guitarra: 'Rafael',
             baixo: 'Gabi',
             bateria: 'Muryllo',
-            teclado: '-',
+            teclado: 'Helo',
             violao: '-'
         }),
         repertorio: [
