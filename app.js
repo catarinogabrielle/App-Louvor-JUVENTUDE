@@ -17,62 +17,54 @@ function gerarEscala(membros = {}) {
 
 const dadosDosCultos = [
     {
-        id: 'culto-02-mai',
-        dataCurta: '02 Mai',
-        dataCompleta: '02 de Maio',
-        destaque: false,
+        id: 'culto-06-jun',
+        dataCurta: '06 Jun',
+        dataCompleta: '06 de Junho',
+        destaque: true,
         escala: gerarEscala({
             ministro: 'Gabi',
-            vocal: 'Poliana',
+            vocal: 'Dyulian / Thaiany',
             guitarra: 'Rafael',
             baixo: 'Henrique',
             bateria: 'Muryllo',
-            teclado: 'Ana',
+            teclado: '-',
             violao: 'Gabi'
         }),
         repertorio: [
-            { numero: 1, titulo: 'Louvor e Honra', info: 'Ron Kenoly e Baruk • Tom: D • BPM: 92' },
-            { numero: 2, titulo: 'TEU POVO', info: 'O Canto das Igrejas • Tom: Ab • BPM: 68' }
+            { numero: 1, titulo: 'Não Há Amor Igual', info: 'Morada • Tom: B • BPM: 73' },
+            { numero: 2, titulo: 'Esperança', info: 'Julia Vitória (part. Gabriel Guedes) • Tom: E • BPM: 157' }
         ],
         materiais: [
-            { tipo: 'pdf', nome: 'Louvor e Honra - Ron Kenoly e Baruk', descricao: 'Cifra', linkDownload: './material/Louvor e Honra - Ron Kenoly e Baruk.pdf' },
-            { tipo: 'pdf', nome: 'TEU POVO', descricao: 'Cifra', linkDownload: './material/Teu Povo.pdf' }
+            { tipo: 'pdf', nome: 'Não Há Amor Igual', descricao: 'Cifra', linkDownload: './material/Não Há Amor Igual.pdf' },
+            { tipo: 'pdf', nome: 'Esperança', descricao: 'Cifra', linkDownload: './material/Esperança.pdf' }
         ]
     },
     {
-        id: 'culto-09-mai',
-        dataCurta: '09 Mai',
-        dataCompleta: '09 de Maio',
+        id: 'culto-13-jun',
+        dataCurta: '13 Jun',
+        dataCompleta: '13 de Junho',
         destaque: false,
         escala: gerarEscala({
-            ministro: 'Dyulian',
-            vocal: 'Dyulian',
-            guitarra: 'Rafael',
-            baixo: 'Henrique',
-            bateria: 'Muryllo',
-            teclado: 'Helo',
-            violao: 'Fernando'
-        }),
-        repertorio: [
-            { numero: 1, titulo: 'Teu Amor não Falha', info: 'Nivea Soares • Tom: Am' },
-            { numero: 2, titulo: 'Pra Onde Eu Irei?', info: 'Morada • Tom: E' }
-        ],
-        materiais: [
-            { tipo: 'pdf', nome: 'Teu Amor não Falha', descricao: 'Cifra', linkDownload: './material/Cifra Club - Nívea Soares - Teu Amor Não Falha.pdf' },
-            { tipo: 'pdf', nome: 'Pra Onde Eu Irei?', descricao: 'Cifra', linkDownload: './material/Cifra Club - MORADA - Para Onde Eu Irei_.pdf' }
-        ]
-    },
-    {
-        id: 'culto-16-mai',
-        dataCurta: '16 Mai',
-        dataCompleta: '16 de Maio',
-        destaque: false,
-        escala: gerarEscala({
-            ministro: 'Gabi',
+            ministro: '-',
             vocal: '-',
             guitarra: '-',
             baixo: '-',
             bateria: '-',
+            teclado: '-',
+            violao: '-'
+        })
+    },
+    {
+        id: 'culto-20-jun',
+        dataCurta: '20 Jun',
+        dataCompleta: '20 de Junho',
+        destaque: false,
+        escala: gerarEscala({
+            ministro: 'Dyulian',
+            vocal: 'Gabi / Thaiany',
+            guitarra: 'Rafael',
+            baixo: 'Henrique',
+            bateria: 'Muryllo',
             teclado: '-',
             violao: 'Gabi'
         }),
@@ -86,18 +78,18 @@ const dadosDosCultos = [
         ]
     },
     {
-        id: 'culto-23-mai',
-        dataCurta: '23 Mai',
-        dataCompleta: '23 de Maio',
+        id: 'culto-27-jun',
+        dataCurta: '27 Jun',
+        dataCompleta: '27 de Junho',
         destaque: false,
         escala: gerarEscala({
             ministro: 'Gabi',
-            vocal: 'Dyulian',
+            vocal: 'Poliana',
             guitarra: 'Rafael',
-            baixo: 'Henrique',
+            baixo: 'Gabi',
             bateria: 'Muryllo',
             teclado: '-',
-            violao: 'Gabi'
+            violao: '-'
         }),
         repertorio: [
             { numero: 1, titulo: 'Tua Alegria', info: 'Drops • Tom: B' },
@@ -106,29 +98,6 @@ const dadosDosCultos = [
         materiais: [
             { tipo: 'pdf', nome: 'Tua Alegria', descricao: 'Cifra', linkDownload: './material/Tua Alegria.pdf' },
             { tipo: 'pdf', nome: 'És Mais Forte', descricao: 'Cifra', linkDownload: './material/És mais forte.pdf' }
-        ]
-    },
-    {
-        id: 'culto-30-mai',
-        dataCurta: '30 Mai',
-        dataCompleta: '30 de Maio',
-        destaque: true,
-        escala: gerarEscala({
-            ministro: 'Gabi',
-            vocal: 'Poliana - (Não Há Outro)',
-            guitarra: 'Rafael',
-            baixo: 'Henrique',
-            bateria: 'Muryllo',
-            teclado: 'Helo',
-            violao: 'Gabi'
-        }),
-        repertorio: [
-            { numero: 1, titulo: 'Batendo à Porta', info: 'Fhop Music • Tom: C#m' },
-            { numero: 2, titulo: 'Não Há Outro', info: 'Dunamis Music • Tom: E' }
-        ],
-        materiais: [
-            { tipo: 'pdf', nome: 'Batendo à Porta', descricao: 'Cifra', linkDownload: './material/Batendo à Porta.pdf' },
-            { tipo: 'pdf', nome: 'Não Há Outro', descricao: 'Cifra', linkDownload: './material/Não Há Outro.pdf' }
         ]
     }
 ];
