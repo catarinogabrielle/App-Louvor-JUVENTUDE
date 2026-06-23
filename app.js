@@ -20,7 +20,7 @@ const dadosDosCultos = [
         id: 'culto-06-jun',
         dataCurta: '06 Jun',
         dataCompleta: '06 de Junho',
-        destaque: true,
+        destaque: false,
         escala: gerarEscala({
             ministro: 'Gabi',
             vocal: 'Dyulian / Thaiany',
@@ -31,12 +31,12 @@ const dadosDosCultos = [
             violao: 'Gabi'
         }),
         repertorio: [
-            { numero: 1, titulo: 'Não Há Amor Igual', info: 'Morada • Tom: B • BPM: 73' },
-            { numero: 2, titulo: 'Esperança', info: 'Julia Vitória (part. Gabriel Guedes) • Tom: E • BPM: 157' }
+            { numero: 1, titulo: 'Teu Amor Não Falha', info: 'Nívea Soares • Tom: Am • BPM: 107' },
+            { numero: 2, titulo: 'Tão Profundo', info: 'Vinayard • Tom: Db • BPM: 100' }
         ],
         materiais: [
-            { tipo: 'pdf', nome: 'Não Há Amor Igual', descricao: 'Cifra', linkDownload: './material/Não Há Amor Igual.pdf' },
-            { tipo: 'pdf', nome: 'Esperança', descricao: 'Cifra', linkDownload: './material/Esperança.pdf' }
+            { tipo: 'pdf', nome: 'Teu Amor Não Falha', descricao: 'Cifra', linkDownload: './material/Teu Amor Não Falha.pdf' },
+            { tipo: 'pdf', nome: 'Tão Profundo', descricao: 'Cifra', linkDownload: './material/Tão Profundo.pdf' }
         ]
     },
     {
@@ -81,7 +81,7 @@ const dadosDosCultos = [
         id: 'culto-27-jun',
         dataCurta: '27 Jun',
         dataCompleta: '27 de Junho',
-        destaque: false,
+        destaque: true,
         escala: gerarEscala({
             ministro: 'Gabi',
             vocal: 'Poliana',
@@ -92,12 +92,12 @@ const dadosDosCultos = [
             violao: '-'
         }),
         repertorio: [
-            { numero: 1, titulo: 'Tua Alegria', info: 'Drops • Tom: B' },
-            { numero: 2, titulo: 'És Mais Forte', info: 'Hillsong • Tom: C' }
+            { numero: 1, titulo: 'Teu Amor Não Falha', info: 'Nívea Soares • Tom: Am • BPM: 107' },
+            { numero: 2, titulo: 'Tão Profundo', info: 'Vinayard • Tom: Db • BPM: 100' }
         ],
         materiais: [
-            { tipo: 'pdf', nome: 'Tua Alegria', descricao: 'Cifra', linkDownload: './material/Tua Alegria.pdf' },
-            { tipo: 'pdf', nome: 'És Mais Forte', descricao: 'Cifra', linkDownload: './material/És mais forte.pdf' }
+            { tipo: 'pdf', nome: 'Teu Amor Não Falha', descricao: 'Cifra', linkDownload: './material/Teu Amor Não Falha.pdf' },
+            { tipo: 'pdf', nome: 'Tão Profundo', descricao: 'Cifra', linkDownload: './material/Tão Profundo.pdf' }
         ]
     }
 ];
