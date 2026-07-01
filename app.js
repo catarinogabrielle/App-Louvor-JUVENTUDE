@@ -17,15 +17,62 @@ function gerarEscala(membros = {}) {
 
 const dadosDosCultos = [
     {
-        id: 'culto-06-jun',
-        dataCurta: '06 Jun',
-        dataCompleta: '06 de Junho',
+        id: 'culto-04-jul',
+        dataCurta: '04 Jul',
+        dataCompleta: '04 de Julho',
+        destaque: true,
+        escala: gerarEscala({
+            ministro: '-',
+            vocal: '-',
+            guitarra: '-',
+            baixo: '-',
+            bateria: '-',
+            teclado: '-',
+            violao: '-'
+        })
+        ,
+        repertorio: [
+            { numero: 1, titulo: '-', info: '-' },
+            { numero: 2, titulo: '-', info: '-' }
+        ],
+        materiais: [
+            { tipo: 'pdf', nome: '-', descricao: 'Cifra', linkDownload: '-' },
+            { tipo: 'pdf', nome: '-', descricao: 'Cifra', linkDownload: '-' }
+        ]
+    },
+    {
+        id: 'culto-11-jul',
+        dataCurta: '11 Jul',
+        dataCompleta: '11 de Julho',
         destaque: false,
         escala: gerarEscala({
             ministro: 'Gabi',
-            vocal: 'Dyulian / Thaiany',
+            vocal: 'Poliana',
             guitarra: 'Rafael',
-            baixo: 'Henrique',
+            baixo: '',
+            bateria: 'Muryllo',
+            teclado: '',
+            violao: 'Gabi'
+        }),
+        repertorio: [
+            { numero: 1, titulo: 'Teu Amor Não Falha', info: 'Nívea Soares • Tom: Am • BPM: 107' },
+            { numero: 2, titulo: 'Tão Profundo', info: 'Vinayard • Tom: Db • BPM: 100' }
+        ],
+        materiais: [
+            { tipo: 'pdf', nome: 'Teu Amor Não Falha', descricao: 'Cifra', linkDownload: './material/Teu Amor Não Falha.pdf' },
+            { tipo: 'pdf', nome: 'Tão Profundo', descricao: 'Cifra', linkDownload: './material/Tão Profundo.pdf' }
+        ]
+    },
+    {
+        id: 'culto-18-jul',
+        dataCurta: '18 Jul',
+        dataCompleta: '18 de Julho',
+        destaque: false,
+        escala: gerarEscala({
+            ministro: 'Dyulian',
+            vocal: 'Gabi / Thaiany',
+            guitarra: 'Rafael',
+            baixo: '',
             bateria: 'Muryllo',
             teclado: 'Helo',
             violao: 'Gabi'
@@ -40,53 +87,15 @@ const dadosDosCultos = [
         ]
     },
     {
-        id: 'culto-13-jun',
-        dataCurta: '13 Jun',
-        dataCompleta: '13 de Junho',
-        destaque: false,
-        escala: gerarEscala({
-            ministro: '-',
-            vocal: '-',
-            guitarra: '-',
-            baixo: '-',
-            bateria: '-',
-            teclado: '-',
-            violao: '-'
-        })
-    },
-    {
-        id: 'culto-20-jun',
-        dataCurta: '20 Jun',
-        dataCompleta: '20 de Junho',
+        id: 'culto-25-jul',
+        dataCurta: '25 Jul',
+        dataCompleta: '25 de Julho',
         destaque: false,
         escala: gerarEscala({
             ministro: 'Dyulian',
-            vocal: 'Gabi / Thaiany',
+            vocal: 'Thaiany',
             guitarra: 'Rafael',
             baixo: 'Henrique',
-            bateria: 'Muryllo',
-            teclado: 'Helo',
-            violao: 'Gabi'
-        }),
-        repertorio: [
-            { numero: 1, titulo: 'Tua Alegria', info: 'Drops • Tom: B' },
-            { numero: 2, titulo: 'Êxodo', info: 'Projeto Sola • Tom: Dm' }
-        ],
-        materiais: [
-            { tipo: 'pdf', nome: 'Tua Alegria', descricao: 'Cifra', linkDownload: './material/Tua Alegria.pdf' },
-            { tipo: 'pdf', nome: 'Êxodo', descricao: 'Cifra', linkDownload: './material/Êxodo.pdf' }
-        ]
-    },
-    {
-        id: 'culto-27-jun',
-        dataCurta: '27 Jun',
-        dataCompleta: '27 de Junho',
-        destaque: true,
-        escala: gerarEscala({
-            ministro: 'Gabi',
-            vocal: 'Poliana',
-            guitarra: 'Rafael',
-            baixo: 'Gabi',
             bateria: 'Muryllo',
             teclado: 'Helo',
             violao: '-'
